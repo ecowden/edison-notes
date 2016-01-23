@@ -39,6 +39,21 @@ configure_edison --setup
 
 This will configure device name, password and WiFi.
 
-### Install Extra Stuff
+### System Packages
 
-See script named (TODO name script).
+Update packages, install extra package repository, and add a few favorites
+like nano and git:
+
+```
+wget https://raw.githubusercontent.com/ecowden/edison-notes/master/opkg-setup.sh -O - | sh
+```
+
+### Upgrade Node.js
+
+The base version of Node.js as of firmware v2.1 is v0.10.38. Yikes!
+
+Remove the old version and manually add the new version from binaries:
+
+```
+wget https://raw.githubusercontent.com/ecowden/edison-notes/master/install-new-node.sh -O - | sh
+```

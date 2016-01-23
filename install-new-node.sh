@@ -7,9 +7,9 @@
 NODE_VERSION=4.2.6
 
 # uninstall the old packages, first
-opkg remove nodejs
-opkg remove nodejs-dev
-opkg remove nodejs-npm
+opkg remove nodejs --force-depends
+opkg remove nodejs-dev --force-depends
+opkg remove nodejs-npm --force-depends
 
 wget "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x86.tar.gz"
 tar -xzf "node-v$NODE_VERSION-linux-x86.tar.gz"
