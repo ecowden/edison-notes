@@ -57,3 +57,10 @@ Remove the old version and manually add the new version from binaries:
 ```
 wget https://raw.githubusercontent.com/ecowden/edison-notes/master/install-new-node.sh -O - | sh
 ```
+
+### SSH Key Setup
+
+Directions [here](ssh-setup.md).
+
+This will keep you from having to type your password in constantly not just
+for SSH, but also when deploying code via rsync or other tools.
