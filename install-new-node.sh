@@ -11,11 +11,17 @@ opkg remove nodejs --force-depends
 opkg remove nodejs-dev --force-depends
 opkg remove nodejs-npm --force-depends
 
+# grab new binaries
 wget "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x86.tar.gz"
 tar -xzf "node-v$NODE_VERSION-linux-x86.tar.gz"
 
+# manually move binaries to /usr/local
 mkdir -p "/usr/local"
 cp -R "node-v$NODE_VERSION-linux-x86/bin" /usr/local/bin
 cp -R "node-v$NODE_VERSION-linux-x86/lib" /usr/local/lib
 cp -R "node-v$NODE_VERSION-linux-x86/include" /usr/local/include
 cp -R "node-v$NODE_VERSION-linux-x86/share" /usr/local/share
+
+# clean up after ourselves
+rm "node-v$NODE_VERSION-linux-x86.tar.gz"
+rm -rf "node-v$NODE_VERSION-linux-x86"
