@@ -14,7 +14,7 @@ opkg remove nodejs-npm --force-depends
 wget "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x86.tar.gz"
 tar -xzf "node-v$NODE_VERSION-linux-x86.tar.gz"
 cd "node-v$NODE_VERSION-linux-x86"
-cp -r bin /usr/local/bin
-cp -r bin /usr/local/lib
-cp -r bin /usr/local/include
-cp -r bin /usr/local/share
+cp -R bin /usr/local/bin
+cp -R bin /usr/local/lib
+cp -R bin /usr/local/include
+cp -R bin /usr/local/share
