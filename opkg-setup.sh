@@ -20,9 +20,13 @@ opkg upgrade
 # echo "src i586 http://iotdk.intel.com/repos/2.0/iotdk/i586" >> /etc/opkg/base-feeds.conf
 echo "src core2-32 http://iotdk.intel.com/repos/2.0/iotdk/core2-32" >> /etc/opkg/base-feeds.conf
 
+# extra third-party packages, like rsync
+echo "src/gz alext-core2-32 http://repo.opkg.net/edison/repo/core2-32" >> /etc/opkg/base-feeds.conf
+
 # update to get info about new packages
 opkg update
 
 # install a few favorites
 opkg install nano
 opkg install git
+opkg install rsync
