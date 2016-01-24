@@ -22,6 +22,8 @@ echo "src core2-32 http://iotdk.intel.com/repos/2.0/iotdk/core2-32" >> /etc/opkg
 
 # extra third-party packages, like rsync
 echo "src/gz alext-core2-32 http://repo.opkg.net/edison/repo/core2-32" >> /etc/opkg/base-feeds.conf
+# echo "src/gz alext-all http://repo.opkg.net/edison/repo/all" >> /etc/opkg/base-feeds.conf
+# echo "src/gz alext-edison http://repo.opkg.net/edison/repo/edison" >> /etc/opkg/base-feeds.conf
 
 # update to get info about new packages
 opkg update
