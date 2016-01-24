@@ -58,6 +58,19 @@ Remove the old version and manually add the new version from binaries:
 wget https://raw.githubusercontent.com/ecowden/edison-notes/master/install-new-node.sh -O - | sh
 ```
 
+### Set Up PM2 Process Manager
+
+This will install pm2, a Node.js process manager. This will allow us to
+daemonize, monitor and otherwise manage apps. We can also use it to watch
+for file changes and restart our app. Combined with smart use of rsync to
+watch for file changes on our development workstation and move them to our
+Edison, this gives us a very comfortable development flow with a fast feedback
+cycle.
+
+```
+wget https://raw.githubusercontent.com/ecowden/edison-notes/master/pm2-setup.sh -O - | sh
+```
+
 ### SSH Key Setup
 
 Directions [here](ssh-setup.md).
