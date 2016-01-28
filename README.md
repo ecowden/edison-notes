@@ -16,7 +16,7 @@ top, nuts at the bottom.
 
 ### Flashing and Base Setup
 
-I flashed with "edison-iotdk-image-280915.zip" downloaded from here (TODO hyperlink).
+I flashed with "edison-iotdk-image-280915.zip" downloaded from [here](https://software.intel.com/en-us/iot/hardware/edison/downloads).
 
 Disconnect Edison if connected.
 
